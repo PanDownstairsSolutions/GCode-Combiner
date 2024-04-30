@@ -33,6 +33,11 @@ This program combines multiple GCode files along with an ejection GCode file int
 - Ensure that all input files (GCode files and ejection GCode file) are in the same directory as the executable or provide the full file paths.
 - Make sure to input valid file names and numbers.
 
+## Disclaimer & Notes for Printing
+- This app only combines GCode files. Use it wisely to prevent machine damage.
+- Make sure you add a delay time or other temperature based GCode command at the very top of your ejection file, so the part has time to cool down.
+- Test your ejection file before attempting to combine files, taking into account warming up the bed, position of printhead etc.
+
 ## Error Handling
 - The program handles errors gracefully, such as file opening failures.
 - Error messages are displayed to help diagnose and fix issues.
