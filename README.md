@@ -1,2 +1,44 @@
-# GCode-Combiner
-This is a GCode combiner written in C, in order to help the 3D printing community run auto-ejection on their favourite machine.
+# GCode Combiner
+
+This program combines multiple GCode files along with an ejection GCode file into a single output file.
+
+## Features
+
+- Combines multiple GCode files into one.
+- Supports specifying the number of copies for each GCode file.
+- Inserts an ejection GCode file between each GCode file.
+- Easy-to-use command-line interface.
+
+## Usage
+
+1. Compile the program using a C compiler (e.g., GCC):
+
+   ```bash
+   gcc -o gcode_combiner gcode_combiner.c
+
+2. Run the compiled executable:
+   ```bash
+   ./gcode_combiner
+
+3. Follow the on-screen prompts:
+- Enter the number of GCode files to combine.
+- Enter the name for the combined .gcode file.
+- Enter the name of the ejection GCode file.
+- For each GCode file:
+  - Enter the file name.
+  - Enter the number of copies.
+  - The combined GCode file will be generated in current directory.
+
+## Notes
+- Ensure that all input files (GCode files and ejection GCode file) are in the same directory as the executable or provide the full file paths.
+- Make sure to input valid file names and numbers.
+
+## Error Handling
+- The program handles errors gracefully, such as file opening failures.
+- Error messages are displayed to help diagnose and fix issues.
+
+## Contributing
+Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
