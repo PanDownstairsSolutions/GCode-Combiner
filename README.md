@@ -11,26 +11,23 @@ This program combines multiple GCode files along with an ejection GCode file int
 
 ## Usage
 
-1. Compile the program using a C compiler (e.g., GCC):
+1. Download the executable file
 
-   ```bash
-   gcc -o gcode_combiner gcode_combiner.c
+2. Save your .gcode files in the same directory with the executable
 
-2. Run the compiled executable:
-   ```bash
-   ./gcode_combiner
+3. Run the executable
 
-3. Follow the on-screen prompts:
-- Enter the number of GCode files to combine.
-- Enter the name for the combined .gcode file.
-- Enter the name of the ejection GCode file.
+4. Follow the on-screen prompts:
+- Enter the total number of GCode files to combine.
+- Enter the name for the combined/generated GCode file (with the .gcode extension).
+- Enter the name of the ejection GCode file (with the .gcode extension).
 - For each GCode file:
-  - Enter the file name.
+  - Enter the file name (with the .gcode extension).
   - Enter the number of copies.
   - The combined GCode file will be generated in current directory.
 
 ## Notes
-- Ensure that all input files (GCode files and ejection GCode file) are in the same directory as the executable or provide the full file paths.
+- Ensure that all input files (GCode files and ejection GCode file) are in the same directory as the executable.
 - Make sure to input valid file names and numbers.
 
 ## Disclaimer & Notes for Printing
